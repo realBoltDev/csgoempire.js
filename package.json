@@ -1,0 +1,37 @@
+{
+  "name": "csgoempire.js",
+  "version": "0.1.0",
+  "description": "An easy-to-use package for interacting with CSGOEmpire API.",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/realBoltDev/csgoempire.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/realBoltDev/csgoempire.js"
+  },
+  "author": {
+    "name": "realBoltDev"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.8.2",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "keywords": [
+    "csgoempire",
+    "csgoempire-api",
+    "csgoempire.js"
+  ]
+}
