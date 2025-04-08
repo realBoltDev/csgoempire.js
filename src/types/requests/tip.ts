@@ -1,12 +1,4 @@
-interface SteamUser {
-  steam_id: string;
-  steam_name: string;
-  avatar: string;
-  avatar_full: string;
-  profile_url: string;
-  timecreated: number;
-  steam_level: number;
-}
+import type { User } from "../models/user.js";
 
 interface TipBaseResponse {
   success: boolean;
@@ -18,7 +10,7 @@ interface TipBaseResponse {
 
 interface TipSteamIdResponse extends TipBaseResponse {
   data: TipBaseResponse['data'] & {
-    user: SteamUser;
+    user: User;
   }
 }
 
