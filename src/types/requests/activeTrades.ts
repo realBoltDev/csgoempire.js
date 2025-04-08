@@ -1,3 +1,4 @@
+import type { User } from "../models/user.js";
 import type { Nullable } from "../shared.js";
 import type { TRADE_STATUS } from "../enums.js";
 
@@ -26,20 +27,10 @@ interface ItemValidation {
   validatedAt: number;
 }
 
-interface Partner {
-  steam_id: string;
-  steam_name: string;
-  avatar: string;
-  avatar_full: string;
-  profile_url: string;
-  timecreated: number;
-  steam_level: number;
-}
-
 interface Metadata {
   item_validation: ItemValidation;
   expires_at: number;
-  partner: Partner;
+  partner: User;
   auction_highest_bid: number;
   auction_ends_at: number;
   auction_highest_bidder: number;
