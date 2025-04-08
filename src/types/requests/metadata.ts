@@ -77,7 +77,7 @@ export interface MetadataResponse {
     user_hash: string;
     roles: any[];
     eligible_for_free_case: boolean;
-    extra_security_type: 'base' | 'strict';
+    extra_security_type: string;
     p2p_telegram_notifications_allowed: boolean;
     p2p_telegram_notifications_enabled: boolean;
     p2p_last_failed_trade_feedback: any;
